@@ -1,0 +1,21 @@
+{% extends "indice/index.html" %}
+
+{% block bloqueHead %}
+{% endblock bloqueHead %}
+
+
+    {% block pruebaTemplate %}
+
+    Mi plantilla la mas vacia
+
+    {% for valor in lista %}
+        <p style="color: red;" >{{valor}}</p>
+    {% endfor %}
+
+    {% if nombre_largo < 5 %}
+        <p style="color: red;">{{nombre}}</p>
+        <p style="color: blue;">{{apellido}}</p>
+        <p style="color: orange;">{{lista}}</p>
+    {% endif %}
+    
+    {% endblock pruebaTemplate %}
